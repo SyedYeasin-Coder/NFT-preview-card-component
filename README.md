@@ -12,7 +12,7 @@ It's a solution of a newbie challange called "NFT preview card component" made b
 
 Here is the link of the challange-
 
-[https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U]()
+[https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
 
 Here is the solution site url-
 [https://syedyeasin-coder.github.io/NFT-preview-card-component/](https://syedyeasin-coder.github.io/NFT-preview-card-component/)
