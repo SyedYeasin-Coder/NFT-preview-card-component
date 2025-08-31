@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    gap             : 2rem;
+    background-color: hsl(217, 54%, 11%);
+    font-size       : 18px;
+    font-family     : "Outfit", sans-serif;
+    color           : lightslategray;
+    width           : 100vw;
+    height          : 100vh;
+}
+
+.whole-container {
+    max-width       : calc(25rem + 1vw);
+    display         : flex;
+    flex-direction  : column;
+    align-items     : flex-start;
+    background-color: hsl(216, 50%, 16%);
+    padding         : 1.5rem;
+    font-size       : clamp(1rem, 0.1rem + 1vw, 3rem);
+    border-radius   : 12px;
+    margin          : 1rem;
+}
+
+.content-container {
+    display       : flex;
+    flex-direction: column;
+    gap           : 1.5rem;
+}
+
+h1 {
+    font-size    : clamp(1.25rem, 0.5rem + 1vw, 3rem);
+    color        : white;
+    margin-bottom: 0.5rem;
+}
+
+h1:hover,
+h1:active {
+    color : hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.time-container,
+.amount-container,
+.amount-time-container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.time-container,
+.amount-container {
+    gap: 8px;
+}
+
+.amount {
+    color: hsl(178, 100%, 50%);
+}
+
+.creator-container {
+    display    : flex;
+    align-items: center;
+    gap        : 12px;
+}
+
+.creator-container img {
+    width        : 30px;
+    border-radius: 50%;
+    border       : 1px solid white;
+}
+
+span {
+    color: white;
+}
+
+span:hover,
+span:active {
+    color : hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+hr {
+    border          : none;
+    height          : 0.5px;
+    color           : hsl(215, 32%, 27%);
+    background-color: hsl(215, 32%, 27%);
+}
+
+.image-container {
+    display      : grid;
+    border-radius: 6px;
+    overflow     : hidden;
+}
+
+.main-bg,
+.overlay,
+.overlay-icon {
+    grid-area : 1 / 1;
+    transition: 0.3s ease-in-out;
+}
+
+.main-bg {
+    width  : 100%;
+    display: block;
+}
+
+.overlay {
+    background-color: hsl(178, 100%, 50%);
+    opacity         : 0;
+    transition      : opacity 0.3s ease-in-out;
+}
+
+.overlay-icon {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    transition     : opacity 0.3s ease-in-out;
+}
+
+.overlay-icon svg {
+    transform : scale(1.25);
+    opacity   : 0;
+    transition: 0.3s ease-in-out;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.5;
+}
+
+.image-container:hover .overlay-icon svg {
+    opacity: 1;
+}
+
+.head-desc-container {
+    margin-top: 1rem;
+}
